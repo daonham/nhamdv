@@ -47,7 +47,7 @@ export default function Contact() {
 
   return (
     <div className="flex gap-2">
-      <div className="flex-1 flex flex-col gap-4 my-4">
+      <div className="flex-1 flex flex-col gap-4">
         <div className="flex items-center gap-2">
           <span className="text-gray-700 font-medium">Time:</span>
           {time.toLocaleTimeString("en-US", {
@@ -86,6 +86,15 @@ export default function Contact() {
             className="text-gray-500 hover:text-gray-700"
           >
             daovan.nham
+          </a>
+        </div>
+        <div className="flex items-center gap-2">
+          <span className="text-gray-700 font-medium">Skype:</span>
+          <a
+            href="skype:live:daonham95?chat"
+            className="text-gray-500 hover:text-gray-700"
+          >
+            daonham95
           </a>
         </div>
       </div>
