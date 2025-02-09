@@ -144,16 +144,16 @@ export default function Home() {
               </li>
               <li>
                 <span className="font-medium">Server:</span> Linux (Nginx,
-                Apache), Docker, AWS
+                Apache), Docker, AWS.
               </li>
               <li>
                 <span className="font-medium">Best packages:</span> Zod, React
-                Hook Form, Framer Motion, Drizzle ORM, Next Auth, SWR...
+                Hook Form, Framer Motion, Prisma, Drizzle ORM, Next Auth, SWR...
               </li>
               <li>
                 <span className="font-medium">NextJS:</span> App Route, Server
                 Component, Suspense, API, Dynamic Route, Cache, Meta Data, PPR,
-                Next-Auth....
+                Next-Auth, Next Safe Action....
               </li>
             </ul>
           </div>
