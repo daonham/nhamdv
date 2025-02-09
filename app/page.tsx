@@ -3,6 +3,7 @@ import { Download, Mail, MapPin, Linkedin, Dot } from "lucide-react";
 import Link from "next/link";
 import Contact from "@/components/contact";
 import Experience from "@/components/experience";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -228,11 +229,7 @@ export default function Home() {
         </div>
       </section>
       <footer className="max-w-3xl w-full mx-auto mt-16">
-        <div className="h-16 flex justify-center items-center border-t border-gray-200">
-          <p className="text-gray-500 text-sm">
-            &copy; {new Date().getFullYear()} Đào Văn Nhâm. All rights reserved.
-          </p>
-        </div>
+        <Footer />
       </footer>
     </main>
   );
