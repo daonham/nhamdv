@@ -14,26 +14,29 @@ const NAV_ITEMS = [
 ];
 
 export default function ScrollSection() {
-  const [activeSections, setActiveSections] = useState<string[]>(["about"]);
+  const [activeSection, setActiveSection] = useState<string>("about");
 
   useEffect(() => {
     const sections = NAV_ITEMS.map(({ id }) => id);
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setActiveSections((prev) => [...prev, entry.target.id]);
-        } else {
-          setActiveSections((prev) =>
-            prev.filter((id) => id !== entry.target.id),
-          );
-        }
-      });
-    });
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      {
+        threshold: 0.5, // Ensures section is at least 50% visible before becoming active
+      },
+    );
 
     sections.forEach((section) => {
       const element = document.getElementById(section);
       if (element) observer.observe(element);
     });
+
+    return () => observer.disconnect();
   }, []);
 
   const scrollToSection = (id: string) => {
@@ -52,18 +55,18 @@ export default function ScrollSection() {
             type="button"
             onClick={() => scrollToSection(id)}
             className={`flex items-center gap-2 text-sm cursor-pointer transition-colors duration-300 ${
-              activeSections.includes(id)
+              activeSection === id
                 ? "text-black"
                 : "text-gray-500 hover:text-gray-700"
             }`}
           >
             <motion.div
               animate={{
-                scale: activeSections.includes(id) ? 1.2 : 1,
+                scale: activeSection === id ? 1.2 : 1,
               }}
               className={cn(
                 "size-2 rounded-full border border-gray-300",
-                activeSections.includes(id) && "border-gray-700 bg-gray-700",
+                activeSection === id && "border-gray-700 bg-gray-700",
               )}
               transition={{ duration: 0.2 }}
             />
