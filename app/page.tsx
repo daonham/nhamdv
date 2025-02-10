@@ -4,6 +4,7 @@ import Link from "next/link";
 import Contact from "@/components/contact";
 import Experience from "@/components/experience";
 import Footer from "@/components/footer";
+import Projects from "@/components/projects";
 import ScrollSection from "@/components/scroll-section";
 
 export default function Home() {
@@ -221,6 +222,7 @@ export default function Home() {
       <section id="projects" className="max-w-3xl w-full mx-auto mt-16">
         <div className="flex flex-col gap-4">
           <h2 className="text-xl font-medium">Projects</h2>
+          <Projects />
         </div>
       </section>
       <section id="contact" className="max-w-3xl w-full mx-auto mt-16">
