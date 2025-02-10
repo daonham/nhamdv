@@ -110,7 +110,7 @@ export default function Contact() {
             type="email"
             id="email"
             {...register("email")}
-            className="w-full p-2 border border-gray-300 rounded-md"
+            className="w-full p-2 border-none rounded-md focus:outline-none ring-1 ring-gray-300 focus:ring-[1.5px] focus:ring-blue-500"
           />
           {errors.email && (
             <span className="text-red-500 text-sm flex items-center gap-1">
@@ -127,7 +127,7 @@ export default function Contact() {
             rows={2}
             id="message"
             {...register("message")}
-            className="w-full p-2 border border-gray-300 rounded-md"
+            className="w-full p-2 border-none rounded-md focus:outline-none ring-1 ring-gray-300 focus:ring-[1.5px] focus:ring-blue-500"
           />
           {errors.message && (
             <span className="text-red-500 text-sm flex items-center gap-1">
