@@ -1,9 +1,10 @@
 import Image from "next/image";
-import { Download, Mail, MapPin, Linkedin, Dot } from "lucide-react";
+import { Download, Mail, MapPin, Linkedin } from "lucide-react";
 import Link from "next/link";
 import Contact from "@/components/contact";
 import Experience from "@/components/experience";
 import Footer from "@/components/footer";
+import ScrollSection from "@/components/scroll-section";
 
 export default function Home() {
   return (
@@ -76,8 +77,8 @@ export default function Home() {
           </div>
         </div>
       </header>
-      <section className="max-w-3xl w-full mx-auto">
-        <div className="flex flex-col gap-4 mt-16">
+      <section id="about" className="max-w-3xl w-full mx-auto mt-16">
+        <div className="flex flex-col gap-4">
           <h2 className="text-xl font-medium">About me</h2>
           <div className="flex flex-col gap-2">
             <article className="prose max-w-none">
@@ -115,8 +116,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="max-w-3xl w-full mx-auto">
-        <div className="flex flex-col gap-4 mt-16">
+      <section id="skills" className="max-w-3xl w-full mx-auto mt-16">
+        <div className="flex flex-col gap-4">
           <h2 className="text-xl font-medium">Skills</h2>
           <div className="flex flex-col gap-2">
             <ul className="text-gray-700 text-base flex flex-col gap-2">
@@ -189,14 +190,14 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="max-w-3xl w-full mx-auto">
-        <div className="flex flex-col gap-4 mt-16">
+      <section id="experience" className="max-w-3xl w-full mx-auto mt-16">
+        <div className="flex flex-col gap-4">
           <h2 className="text-xl font-medium">Experience</h2>
           <Experience />
         </div>
       </section>
-      <section className="max-w-3xl w-full mx-auto">
-        <div className="flex flex-col gap-4 mt-16">
+      <section id="education" className="max-w-3xl w-full mx-auto mt-16">
+        <div className="flex flex-col gap-4">
           <h2 className="text-xl font-medium">Education</h2>
           <div className="flex flex-col gap-2">
             <div className="flex flex-col gap-2">
@@ -217,13 +218,13 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="max-w-3xl w-full mx-auto">
-        <div className="flex flex-col gap-4 mt-16">
+      <section id="projects" className="max-w-3xl w-full mx-auto mt-16">
+        <div className="flex flex-col gap-4">
           <h2 className="text-xl font-medium">Projects</h2>
         </div>
       </section>
-      <section className="max-w-3xl w-full mx-auto">
-        <div className="flex flex-col gap-4 mt-16">
+      <section id="contact" className="max-w-3xl w-full mx-auto mt-16">
+        <div className="flex flex-col gap-4">
           <h2 className="text-xl font-medium">Contact</h2>
           <Contact />
         </div>
@@ -231,6 +232,7 @@ export default function Home() {
       <footer className="max-w-3xl w-full mx-auto mt-16">
         <Footer />
       </footer>
+      <ScrollSection />
     </main>
   );
 }
