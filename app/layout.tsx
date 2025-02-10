@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { Toaster } from "sonner";
-import { CircleAlert, CircleCheck, Info, TriangleAlert } from "lucide-react";
+import Provider from "./provider";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -19,18 +18,14 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.variable} suppressHydrationWarning>
       <body className="antialiased">
-        {children}
-        <Toaster
-          closeButton
-          position="bottom-center"
-          className="pointer-events-auto"
-          icons={{
-            error: <CircleAlert className="size-5 text-red-500" />,
-            success: <CircleCheck className="size-5 text-emerald-500" />,
-            info: <Info className="size-5 text-blue-500" />,
-            warning: <TriangleAlert className="size-5 text-amber-500" />,
-          }}
-        />
+        <Provider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </Provider>
       </body>
     </html>
   );
