@@ -124,7 +124,7 @@ export default function Contact() {
             type="email"
             id="email"
             {...register("email")}
-            className="w-full p-2 border-none rounded-md focus:outline-none ring-1 ring-gray-300 focus:ring-[1.5px] focus:ring-blue-500 text-gray-800"
+            className="w-full p-2 border-none rounded-md focus:outline-none ring-1 ring-gray-300 focus:ring-[1.5px] focus:ring-blue-500 text-gray-800 bg-white dark:bg-gray-600 dark:ring-gray-500 dark:text-gray-200"
           />
           {errors.email && (
             <span className="text-red-500 text-sm flex items-center gap-1">
@@ -141,7 +141,7 @@ export default function Contact() {
             rows={2}
             id="message"
             {...register("message")}
-            className="w-full p-2 border-none rounded-md focus:outline-none ring-1 ring-gray-300 focus:ring-[1.5px] focus:ring-blue-500 text-gray-800"
+            className="w-full p-2 border-none rounded-md focus:outline-none ring-1 ring-gray-300 focus:ring-[1.5px] focus:ring-blue-500 text-gray-800 bg-white dark:bg-gray-600 dark:ring-gray-500 dark:text-gray-200"
           />
           {errors.message && (
             <span className="text-red-500 text-sm flex items-center gap-1">
@@ -152,7 +152,7 @@ export default function Contact() {
         </div>
         <button
           type="submit"
-          className="p-2 text-white bg-black dark:text-black dark:bg-gray-200 rounded-md cursor-pointer"
+          className="p-2 text-white bg-black dark:text-black dark:bg-gray-300 rounded-md cursor-pointer"
           disabled={isExecuting}
         >
           {isExecuting ? "Sending..." : "Send"}
