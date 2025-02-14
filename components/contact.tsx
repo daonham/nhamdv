@@ -46,7 +46,7 @@ export default function Contact() {
   }, []);
 
   return (
-    <div className="flex gap-2">
+    <div className="flex sm:flex-row flex-col sm:gap-4 gap-8">
       <div className="flex-1 flex flex-col gap-4">
         <div className="flex items-center gap-2">
           <span className="text-gray-700 font-medium">Time:</span>

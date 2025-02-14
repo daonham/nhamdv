@@ -10,7 +10,7 @@ import ScrollSection from "@/components/scroll-section";
 export default function Home() {
   return (
     <main className="flex flex-col items-center relative overflow-hidden w-full min-h-[100dvh]">
-      <header className="max-w-3xl w-full mx-auto">
+      <header className="max-w-screen-md px-4 w-full mx-auto">
         <div className="flex flex-col justify-center w-full h-full">
           <div className="flex pt-16 gap-4 w-full">
             <div className="w-[120px] h-[120px] relative">
@@ -22,31 +22,33 @@ export default function Home() {
                 className="rounded-md absolute top-0 left-0 w-full h-full object-cover shadow-md"
               />
             </div>
-            <div className="flex flex-col gap-2">
-              <h1 className="text-2xl font-medium">Đào Văn Nhâm</h1>
-              <p className="text-gray-600">Software Engineer</p>
-              <p className="flex items-center gap-1 text-gray-500">
-                <MapPin className="size-4" />
-                <span className="text-sm">Hanoi, Vietnam</span>
-              </p>
-              <p className="flex items-center gap-2 text-gray-500">
-                <span className="size-2 bg-green-500 rounded-full" />
-                <span className="text-sm">Available for work</span>
-              </p>
-            </div>
-            <div className="flex flex-col gap-2 flex-1 justify-end items-end">
-              <div className="flex flex-col gap-2 items-end">
-                <button
-                  type="button"
-                  className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-black rounded-md cursor-pointer"
-                >
-                  <Download className="size-4" />
-                  Download CV
-                </button>
+            <div className="flex gap-4 sm:flex-row flex-col flex-1">
+              <div className="flex flex-col flex-1 gap-2">
+                <h1 className="text-2xl font-medium">Đào Văn Nhâm</h1>
+                <p className="text-gray-600">Software Engineer</p>
+                <p className="flex items-center gap-1 text-gray-500">
+                  <MapPin className="size-4" />
+                  <span className="text-sm">Hanoi, Vietnam</span>
+                </p>
+                <p className="flex items-center gap-2 text-gray-500">
+                  <span className="size-2 bg-green-500 rounded-full" />
+                  <span className="text-sm">Available for work</span>
+                </p>
+              </div>
+              <div className="flex flex-col gap-2 justify-end sm:items-end">
+                <div className="inline-flex gap-2 sm:items-end">
+                  <button
+                    type="button"
+                    className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-black rounded-md cursor-pointer"
+                  >
+                    <Download className="size-4" />
+                    Download CV
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-          <div className="flex justify-between gap-2 border-t pt-4 mt-4 border-gray-200">
+          <div className="flex flex-wrap justify-between gap-2 border-t pt-4 mt-4 border-gray-200">
             <div className="flex items-center gap-2 text-sm text-gray-500">
               <Mail className="size-4" />
               daonham95@gmail.com
@@ -78,7 +80,7 @@ export default function Home() {
           </div>
         </div>
       </header>
-      <section id="about" className="max-w-3xl w-full mx-auto mt-16">
+      <section id="about" className="max-w-screen-md px-4 w-full mx-auto mt-16">
         <div className="flex flex-col gap-4">
           <h2 className="text-xl font-medium">About me</h2>
           <div className="flex flex-col gap-2">
@@ -117,7 +119,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="skills" className="max-w-3xl w-full mx-auto mt-16">
+      <section
+        id="skills"
+        className="max-w-screen-md px-4 w-full mx-auto mt-16"
+      >
         <div className="flex flex-col gap-4">
           <h2 className="text-xl font-medium">Skills</h2>
           <div className="flex flex-col gap-2">
@@ -191,13 +196,19 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="experience" className="max-w-3xl w-full mx-auto mt-16">
+      <section
+        id="experience"
+        className="max-w-screen-md px-4 w-full mx-auto mt-16"
+      >
         <div className="flex flex-col gap-4">
           <h2 className="text-xl font-medium">Experience</h2>
           <Experience />
         </div>
       </section>
-      <section id="education" className="max-w-3xl w-full mx-auto mt-16">
+      <section
+        id="education"
+        className="max-w-screen-md px-4 w-full mx-auto mt-16"
+      >
         <div className="flex flex-col gap-4">
           <h2 className="text-xl font-medium">Education</h2>
           <div className="flex flex-col gap-2">
@@ -219,19 +230,25 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="projects" className="max-w-3xl w-full mx-auto mt-16">
+      <section
+        id="projects"
+        className="max-w-screen-md px-4 w-full mx-auto mt-16"
+      >
         <div className="flex flex-col gap-4">
           <h2 className="text-xl font-medium">Projects</h2>
           <Projects />
         </div>
       </section>
-      <section id="contact" className="max-w-3xl w-full mx-auto mt-16">
+      <section
+        id="contact"
+        className="max-w-screen-md px-4 w-full mx-auto mt-16"
+      >
         <div className="flex flex-col gap-4">
           <h2 className="text-xl font-medium">Contact</h2>
           <Contact />
         </div>
       </section>
-      <footer className="max-w-3xl w-full mx-auto mt-16">
+      <footer className="max-w-screen-md px-4 w-full mx-auto mt-16">
         <Footer />
       </footer>
       <ScrollSection />

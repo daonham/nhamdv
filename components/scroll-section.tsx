@@ -47,7 +47,7 @@ export default function ScrollSection() {
   };
 
   return (
-    <div className="fixed bottom-1/2 translate-y-1/2 left-2">
+    <div className="fixed bottom-1/2 translate-y-1/2 left-2 lg:block hidden">
       <div className="flex flex-col items-start gap-2">
         {NAV_ITEMS.map(({ id, label }) => (
           <button
