@@ -49,50 +49,64 @@ export default function Contact() {
     <div className="flex sm:flex-row flex-col sm:gap-4 gap-8">
       <div className="flex-1 flex flex-col gap-4">
         <div className="flex items-center gap-2">
-          <span className="text-gray-700 font-medium">Time:</span>
+          <span className="text-gray-700 dark:text-gray-200 font-medium">
+            Time:
+          </span>
           {time.toLocaleTimeString("en-US", {
             timeZone: "Asia/Ho_Chi_Minh",
             hour: "2-digit",
             minute: "2-digit",
           })}{" "}
-          <span className="text-gray-500">(UTC +07:00)</span>
+          <span className="text-gray-500 dark:text-gray-400">(UTC +07:00)</span>
         </div>
         <div className="flex items-center gap-2">
-          <span className="text-gray-700 font-medium">Email:</span>
-          <span className="text-gray-500">daonham95@gmail.com</span>
+          <span className="text-gray-700 dark:text-gray-200 font-medium">
+            Email:
+          </span>
+          <span className="text-gray-500 dark:text-gray-400">
+            daonham95@gmail.com
+          </span>
         </div>
         <div className="flex items-center gap-2">
-          <span className="text-gray-700 font-medium">LinkedIn:</span>
+          <span className="text-gray-700 dark:text-gray-200 font-medium">
+            LinkedIn:
+          </span>
           <a
             href="https://www.linkedin.com/in/nh%C3%A2m-%C4%91%C3%A0o-03a561136/"
-            className="text-gray-500 hover:text-gray-700"
+            className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300"
           >
             @NhamDao
           </a>
         </div>
         <div className="flex items-center gap-2">
-          <span className="text-gray-700 font-medium">X:</span>
+          <span className="text-gray-700 dark:text-gray-200 font-medium">
+            X:
+          </span>
           <a
             href="https://x.com/Nhamkin"
-            className="text-gray-500 hover:text-gray-700"
+            className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300"
           >
             @Nhamkin
           </a>
         </div>
         <div className="flex items-center gap-2">
-          <span className="text-gray-700 font-medium">Facebook:</span>
+          <span className="text-gray-700 dark:text-gray-200 font-medium">
+            Facebook:
+          </span>
           <a
             href="https://www.facebook.com/daovan.nham"
-            className="text-gray-500 hover:text-gray-700"
+            className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300"
           >
             daovan.nham
           </a>
         </div>
         <div className="flex items-center gap-2">
-          <span className="text-gray-700 font-medium">Skype:</span>
+          <span className="text-gray-700 dark:text-gray-200 font-medium">
+            Skype:
+          </span>
           <a
             href="skype:live:daonham95?chat"
-            className="text-gray-500 hover:text-gray-700"
+            className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300"
           >
             daonham95
           </a>
@@ -110,7 +124,7 @@ export default function Contact() {
             type="email"
             id="email"
             {...register("email")}
-            className="w-full p-2 border-none rounded-md focus:outline-none ring-1 ring-gray-300 focus:ring-[1.5px] focus:ring-blue-500"
+            className="w-full p-2 border-none rounded-md focus:outline-none ring-1 ring-gray-300 focus:ring-[1.5px] focus:ring-blue-500 text-gray-800"
           />
           {errors.email && (
             <span className="text-red-500 text-sm flex items-center gap-1">
@@ -127,7 +141,7 @@ export default function Contact() {
             rows={2}
             id="message"
             {...register("message")}
-            className="w-full p-2 border-none rounded-md focus:outline-none ring-1 ring-gray-300 focus:ring-[1.5px] focus:ring-blue-500"
+            className="w-full p-2 border-none rounded-md focus:outline-none ring-1 ring-gray-300 focus:ring-[1.5px] focus:ring-blue-500 text-gray-800"
           />
           {errors.message && (
             <span className="text-red-500 text-sm flex items-center gap-1">
@@ -138,7 +152,7 @@ export default function Contact() {
         </div>
         <button
           type="submit"
-          className="p-2 text-white bg-black rounded-md cursor-pointer"
+          className="p-2 text-white bg-black dark:text-black dark:bg-gray-200 rounded-md cursor-pointer"
           disabled={isExecuting}
         >
           {isExecuting ? "Sending..." : "Send"}

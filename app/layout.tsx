@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={inter.variable} suppressHydrationWarning>
-      <body className="antialiased">
+      <body className="antialiased dark:bg-gray-900">
         <Provider
           attribute="class"
           defaultTheme="system"

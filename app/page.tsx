@@ -6,11 +6,12 @@ import Experience from "@/components/experience";
 import Footer from "@/components/footer";
 import Projects from "@/components/projects";
 import ScrollSection from "@/components/scroll-section";
+import ToggleTheme from "@/components/toggle-theme";
 
 export default function Home() {
   return (
     <main className="flex flex-col items-center relative overflow-hidden w-full min-h-[100dvh]">
-      <header className="max-w-screen-md px-4 w-full mx-auto">
+      <header className="max-w-screen-md px-4 w-full mx-auto relative">
         <div className="flex flex-col justify-center w-full h-full">
           <div className="flex pt-16 gap-4 w-full">
             <div className="w-[120px] h-[120px] relative">
@@ -25,12 +26,14 @@ export default function Home() {
             <div className="flex gap-4 sm:flex-row flex-col flex-1">
               <div className="flex flex-col flex-1 gap-2">
                 <h1 className="text-2xl font-medium">Đào Văn Nhâm</h1>
-                <p className="text-gray-600">Software Engineer</p>
-                <p className="flex items-center gap-1 text-gray-500">
+                <p className="text-gray-600 dark:text-gray-200">
+                  Software Engineer
+                </p>
+                <p className="flex items-center gap-1 text-gray-500 dark:text-gray-400">
                   <MapPin className="size-4" />
                   <span className="text-sm">Hanoi, Vietnam</span>
                 </p>
-                <p className="flex items-center gap-2 text-gray-500">
+                <p className="flex items-center gap-2 text-gray-500 dark:text-gray-300">
                   <span className="size-2 bg-green-500 rounded-full" />
                   <span className="text-sm">Available for work</span>
                 </p>
@@ -39,7 +42,7 @@ export default function Home() {
                 <div className="inline-flex gap-2 sm:items-end">
                   <button
                     type="button"
-                    className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-black rounded-md cursor-pointer"
+                    className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-black rounded-md cursor-pointer dark:bg-gray-200 dark:text-black"
                   >
                     <Download className="size-4" />
                     Download CV
@@ -48,13 +51,13 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="flex flex-wrap justify-between gap-2 border-t pt-4 mt-4 border-gray-200">
-            <div className="flex items-center gap-2 text-sm text-gray-500">
+          <div className="flex flex-wrap justify-between gap-2 border-t pt-4 mt-4 border-gray-200 dark:border-gray-600">
+            <div className="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-300">
               <Mail className="size-4" />
               daonham95@gmail.com
             </div>
             <div className="flex items-center gap-3">
-              <div className="flex items-center gap-2 text-sm text-gray-500">
+              <div className="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-300">
                 <Linkedin className="size-4" />
                 <Link
                   href="https://www.linkedin.com/in/nh%C3%A2m-%C4%91%C3%A0o-03a561136/"
@@ -65,7 +68,7 @@ export default function Home() {
                   NhamDao
                 </Link>
               </div>
-              <div className="flex items-center gap-2 text-sm text-gray-500">
+              <div className="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-300">
                 <img src="/x.svg" alt="X" className="size-4" />
                 <Link
                   href="https://x.com/Nhamkin"
@@ -79,12 +82,14 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        <ToggleTheme />
       </header>
       <section id="about" className="max-w-screen-md px-4 w-full mx-auto mt-16">
         <div className="flex flex-col gap-4">
           <h2 className="text-xl font-medium">About me</h2>
           <div className="flex flex-col gap-2">
-            <article className="prose max-w-none">
+            <article className="prose dark:text-gray-300 max-w-none">
               <p>
                 I am a Developer with 8 years of experience in web and mobile
                 development, specializing in both frontend and backend
@@ -126,7 +131,7 @@ export default function Home() {
         <div className="flex flex-col gap-4">
           <h2 className="text-xl font-medium">Skills</h2>
           <div className="flex flex-col gap-2">
-            <ul className="text-gray-700 text-base flex flex-col gap-2">
+            <ul className="text-gray-700 dark:text-gray-300 text-base flex flex-col gap-2">
               <li className="flex gap-2.5">
                 <span className="size-1.25 rounded-full bg-gray-600 mt-2" />
                 <span className="flex-1">
@@ -214,7 +219,7 @@ export default function Home() {
           <div className="flex flex-col gap-2">
             <div className="flex flex-col gap-2">
               <div className="flex justify-between gap-2">
-                <p className="flex items-center gap-2 text-gray-500 text-sm">
+                <p className="flex items-center gap-2 text-gray-500 dark:text-gray-400 text-sm">
                   <MapPin className="size-4" />
                   Hanoi, Vietnam
                 </p>
@@ -223,7 +228,7 @@ export default function Home() {
               <h3 className="text-md font-medium">
                 National Economics University
               </h3>
-              <p className="text-gray-500">
+              <p className="text-gray-500 dark:text-gray-300">
                 Computer Science and Information Technology
               </p>
             </div>

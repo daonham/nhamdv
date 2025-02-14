@@ -56,8 +56,8 @@ export default function ScrollSection() {
             onClick={() => scrollToSection(id)}
             className={`flex items-center gap-2 text-sm cursor-pointer transition-colors duration-300 ${
               activeSection === id
-                ? "text-black"
-                : "text-gray-500 hover:text-gray-700"
+                ? "text-black dark:text-white"
+                : "text-gray-500 hover:text-gray-700 dark:text-white dark:hover:text-gray-300"
             }`}
           >
             <motion.div
@@ -66,7 +66,8 @@ export default function ScrollSection() {
               }}
               className={cn(
                 "size-2 rounded-full border border-gray-300",
-                activeSection === id && "border-gray-700 bg-gray-700",
+                activeSection === id &&
+                  "border-gray-700 bg-gray-700 dark:border-gray-300 dark:bg-gray-300",
               )}
               transition={{ duration: 0.2 }}
             />
