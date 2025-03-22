@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import { CircleAlert, CircleCheck, Info, TriangleAlert } from "lucide-react";
-import { Toaster } from "sonner";
-import { ThemeProvider, type ThemeProviderProps } from "next-themes";
+import { CircleAlert, CircleCheck, Info, TriangleAlert } from 'lucide-react';
+import { Toaster } from 'sonner';
+import { ThemeProvider, type ThemeProviderProps } from 'next-themes';
 
 export default function Provider({ children, ...props }: ThemeProviderProps) {
   return (
@@ -16,7 +16,7 @@ export default function Provider({ children, ...props }: ThemeProviderProps) {
           error: <CircleAlert className="size-5 text-red-500" />,
           success: <CircleCheck className="size-5 text-emerald-500" />,
           info: <Info className="size-5 text-blue-500" />,
-          warning: <TriangleAlert className="size-5 text-amber-500" />,
+          warning: <TriangleAlert className="size-5 text-amber-500" />
         }}
       />
     </ThemeProvider>

@@ -1,16 +1,16 @@
-"use client";
+'use client';
 
-import { useState, useEffect } from "react";
-import { motion } from "motion/react";
-import { cn } from "@/lib/utils";
+import { cn } from '@/lib/utils';
+import { motion } from 'motion/react';
+import { useEffect, useState } from 'react';
 
 const NAV_ITEMS = [
-  { id: "about", label: "About me" },
-  { id: "skills", label: "Skills" },
-  { id: "experience", label: "Experience" },
-  { id: "education", label: "Education" },
-  { id: "projects", label: "Projects" },
-  { id: "contact", label: "Contact" },
+  { id: 'about', label: 'About me' },
+  { id: 'skills', label: 'Skills' },
+  { id: 'experience', label: 'Experience' },
+  { id: 'education', label: 'Education' },
+  { id: 'projects', label: 'Projects' },
+  { id: 'contact', label: 'Contact' }
 ];
 
 export default function ScrollSection() {
@@ -27,8 +27,8 @@ export default function ScrollSection() {
         });
       },
       {
-        threshold: 0.5, // Ensures section is at least 50% visible before becoming active
-      },
+        threshold: 0.5 // Ensures section is at least 50% visible before becoming active
+      }
     );
 
     sections.forEach((section) => {
@@ -42,32 +42,32 @@ export default function ScrollSection() {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      element.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
   return (
-    <div className="fixed bottom-1/2 translate-y-1/2 left-2 lg:block hidden">
+    <div className="fixed bottom-1/2 left-2 hidden translate-y-1/2 lg:block">
       <div className="flex flex-col items-start gap-2">
         {NAV_ITEMS.map(({ id, label }) => (
           <button
             key={id}
             type="button"
             onClick={() => scrollToSection(id)}
-            className={`flex items-center gap-2 text-sm cursor-pointer transition-colors duration-300 ${
+            className={`flex cursor-pointer items-center gap-2 text-sm transition-colors duration-300 ${
               activeSection === id
-                ? "text-black dark:text-white"
-                : "text-gray-500 hover:text-gray-700 dark:text-white dark:hover:text-gray-300"
+                ? 'text-black dark:text-white'
+                : 'text-gray-500 hover:text-gray-700 dark:text-white dark:hover:text-gray-300'
             }`}
           >
             <motion.div
               animate={{
-                scale: activeSection === id ? 1.2 : 1,
+                scale: activeSection === id ? 1.2 : 1
               }}
               className={cn(
-                "size-2 rounded-full border border-gray-300",
+                'size-2 rounded-full border border-gray-300',
                 activeSection === id &&
-                  "border-gray-700 bg-gray-700 dark:border-gray-300 dark:bg-gray-300",
+                  'border-gray-700 bg-gray-700 dark:border-gray-300 dark:bg-gray-300'
               )}
               transition={{ duration: 0.2 }}
             />

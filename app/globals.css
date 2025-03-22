@@ -5,5 +5,5 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-    --font-sans: var(--font-inter);
+  --font-sans: var(--font-inter);
 }

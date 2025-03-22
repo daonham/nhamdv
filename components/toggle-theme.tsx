@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import { cn } from "@/lib/utils";
-import { Sun, Moon } from "lucide-react";
-import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
+import { cn } from '@/lib/utils';
+import { Sun, Moon } from 'lucide-react';
+import { useTheme } from 'next-themes';
+import { useEffect, useState } from 'react';
 
 export default function ToggleTheme() {
   const [mounted, setMounted] = useState(false);
@@ -18,23 +18,23 @@ export default function ToggleTheme() {
   }
 
   return (
-    <div className="text-zinc-400 absolute top-16 right-4 gap-2 hidden sm:flex">
+    <div className="absolute top-16 right-4 hidden gap-2 text-zinc-400 sm:flex">
       <button
         className={cn(
-          "text-zinc-400 size-7 inline-flex items-center justify-center rounded-sm transition-colors duration-300 cursor-pointer",
-          theme !== "dark" && "text-zinc-600 bg-gray-200/60",
+          'inline-flex size-7 cursor-pointer items-center justify-center rounded-sm text-zinc-400 transition-colors duration-300',
+          theme !== 'dark' && 'bg-gray-200/60 text-zinc-600'
         )}
-        onClick={() => setTheme("light")}
+        onClick={() => setTheme('light')}
         aria-label="Toggle light theme"
       >
         <Sun className="size-4" />
       </button>
       <button
         className={cn(
-          "text-zinc-400 size-7 inline-flex items-center justify-center rounded-sm transition-colors duration-300 cursor-pointer",
-          theme === "dark" && "text-white bg-gray-700/60",
+          'inline-flex size-7 cursor-pointer items-center justify-center rounded-sm text-zinc-400 transition-colors duration-300',
+          theme === 'dark' && 'bg-gray-700/60 text-white'
         )}
-        onClick={() => setTheme("dark")}
+        onClick={() => setTheme('dark')}
         aria-label="Toggle dark theme"
       >
         <Moon className="size-4" />
