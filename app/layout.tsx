@@ -16,8 +16,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={inter.variable} suppressHydrationWarning>
-      <body className="antialiased dark:bg-gray-900">
+    <html
+      lang="en"
+      className={`${inter.variable} antialiased dark:bg-gray-900`}
+      suppressHydrationWarning
+    >
+      <body>
         <Provider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           {children}
         </Provider>
