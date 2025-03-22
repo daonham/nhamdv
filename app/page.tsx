@@ -15,6 +15,8 @@ export default function Home() {
           <div className="flex w-full gap-4 pt-16">
             <div className="relative h-[120px] w-[120px]">
               <Image
+                priority={true}
+                overrideSrc="/avatar.png"
                 src="/avatar.png"
                 alt="Avatar"
                 width={120}
