@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Download, Mail, MapPin, Linkedin, Link as LinkIcon, Ellipsis } from 'lucide-react';
+import { Download, MapPin } from 'lucide-react';
 import Link from 'next/link';
 import Contact from '@/components/contact';
 import Experience from '@/components/experience';
@@ -235,7 +235,6 @@ export default function Home() {
       <footer className="mx-auto mt-16 w-full max-w-screen-md px-4">
         <Footer />
       </footer>
-      <ScrollSection />
     </main>
   );
 }
