@@ -14,7 +14,7 @@ const NAV_ITEMS = [
 ];
 
 export default function ScrollSection() {
-  const [activeSection, setActiveSection] = useState<string>("about");
+  const [activeSection, setActiveSection] = useState<string>('about');
 
   useEffect(() => {
     const sections = NAV_ITEMS.map(({ id }) => id);
