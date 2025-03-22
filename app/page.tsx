@@ -54,7 +54,7 @@ export default function Home() {
           <div className="flex flex-col gap-4 sm:flex-row dark:border-gray-600">
             <a
               href="mailto:daonham95@gmail.com"
-              className="group relative min-w-50 rounded-xl bg-gray-200/50 px-4 py-3 text-sm ring-1 ring-gray-200 hover:ring-gray-300 dark:bg-gray-600 dark:ring-gray-500 dark:hover:ring-gray-400"
+              className="group relative min-w-50 rounded-xl bg-gray-200/50 px-4 py-3 text-sm ring-1 ring-gray-200 hover:ring-gray-300 dark:bg-gray-800 dark:ring-gray-700 dark:hover:ring-gray-600"
             >
               <div className="font-medium text-gray-500 dark:text-gray-400">Available</div>
               <div className="font-medium text-gray-800 dark:text-white">Send a message</div>
@@ -65,7 +65,7 @@ export default function Home() {
             </a>
             <Link
               href="/projects"
-              className="group relative min-w-50 rounded-xl bg-gray-200/50 px-4 py-3 text-sm ring-1 ring-gray-200 hover:ring-gray-300 dark:bg-gray-600 dark:ring-gray-500 dark:hover:ring-gray-400"
+              className="group relative min-w-50 rounded-xl bg-gray-200/50 px-4 py-3 text-sm ring-1 ring-gray-200 hover:ring-gray-300 dark:bg-gray-800 dark:ring-gray-700 dark:hover:ring-gray-600"
             >
               <div className="text-sm font-medium text-gray-500 dark:text-gray-400">Supply</div>
               <div className="text-sm font-medium text-gray-800 dark:text-white">
@@ -78,7 +78,7 @@ export default function Home() {
             </Link>
             <Link
               href="/contact"
-              className="group relative min-w-50 rounded-xl bg-gray-200/50 px-4 py-3 text-sm ring-1 ring-gray-200 hover:ring-gray-300 dark:bg-gray-600 dark:ring-gray-500 dark:hover:ring-gray-400"
+              className="group relative min-w-50 rounded-xl bg-gray-200/50 px-4 py-3 text-sm ring-1 ring-gray-200 hover:ring-gray-300 dark:bg-gray-800 dark:ring-gray-700 dark:hover:ring-gray-600"
             >
               <div className="text-sm font-medium text-gray-500 dark:text-gray-400">Contact</div>
               <div className="text-sm font-medium text-gray-800 dark:text-white">Get in touch</div>
