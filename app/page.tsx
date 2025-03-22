@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Download, Mail, MapPin, Linkedin } from 'lucide-react';
+import { Download, Mail, MapPin, Linkedin, Link as LinkIcon, Ellipsis } from 'lucide-react';
 import Link from 'next/link';
 import Contact from '@/components/contact';
 import Experience from '@/components/experience';
@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <main className="relative flex min-h-[100dvh] w-full flex-col items-center overflow-hidden">
       <header className="relative mx-auto w-full max-w-screen-md px-4">
-        <div className="flex h-full w-full flex-col justify-center">
+        <div className="flex h-full w-full flex-col justify-center gap-8">
           <div className="flex w-full gap-4 pt-16">
             <div className="relative h-[120px] w-[120px]">
               <Image
@@ -26,7 +26,9 @@ export default function Home() {
             <div className="flex flex-1 flex-col gap-4 sm:flex-row">
               <div className="flex flex-1 flex-col gap-2">
                 <h1 className="text-2xl font-medium">Đào Văn Nhâm</h1>
-                <p className="text-gray-600 dark:text-gray-200">Software Engineer</p>
+                <p className="text-sm font-medium text-gray-600 dark:text-gray-200">
+                  Software Engineer
+                </p>
                 <p className="flex items-center gap-1 text-gray-500 dark:text-gray-400">
                   <MapPin className="size-4" />
                   <span className="text-sm">Hanoi, Vietnam</span>
@@ -49,35 +51,42 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="mt-4 flex flex-wrap justify-between gap-2 border-t border-gray-200 pt-4 dark:border-gray-600">
-            <div className="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-300">
-              <Mail className="size-4" />
-              daonham95@gmail.com
-            </div>
-            <div className="flex items-center gap-3">
-              <div className="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-300">
-                <Linkedin className="size-4" />
-                <Link
-                  href="https://www.linkedin.com/in/nh%C3%A2m-%C4%91%C3%A0o-03a561136/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-gray-700"
-                >
-                  NhamDao
-                </Link>
+          <div className="flex flex-col gap-4 sm:flex-row dark:border-gray-600">
+            <a
+              href="mailto:daonham95@gmail.com"
+              className="group relative min-w-50 rounded-xl bg-gray-200/50 px-4 py-3 text-sm ring-1 ring-gray-200 hover:ring-gray-300 dark:bg-gray-600 dark:ring-gray-500 dark:hover:ring-gray-400"
+            >
+              <div className="font-medium text-gray-500 dark:text-gray-400">Available</div>
+              <div className="font-medium text-gray-800 dark:text-white">Send a message</div>
+              <div className="absolute top-4 right-4 flex gap-0.5">
+                <div className="size-1 rounded-full bg-gray-400/60 group-hover:bg-gray-500 dark:bg-gray-400 dark:group-hover:bg-gray-200"></div>
+                <div className="size-1 rounded-full bg-gray-400/60 group-hover:bg-gray-500 dark:bg-gray-400 dark:group-hover:bg-gray-200"></div>
               </div>
-              <div className="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-300">
-                <img src="/x.svg" alt="X" className="size-4" />
-                <Link
-                  href="https://x.com/Nhamkin"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-gray-700"
-                >
-                  Nhamkin
-                </Link>
+            </a>
+            <Link
+              href="/projects"
+              className="group relative min-w-50 rounded-xl bg-gray-200/50 px-4 py-3 text-sm ring-1 ring-gray-200 hover:ring-gray-300 dark:bg-gray-600 dark:ring-gray-500 dark:hover:ring-gray-400"
+            >
+              <div className="text-sm font-medium text-gray-500 dark:text-gray-400">Supply</div>
+              <div className="text-sm font-medium text-gray-800 dark:text-white">
+                Discover my projects
               </div>
-            </div>
+              <div className="absolute top-4 right-4 flex gap-0.5">
+                <div className="size-1 rounded-full bg-gray-400/60 group-hover:bg-gray-500 dark:bg-gray-400 dark:group-hover:bg-gray-200"></div>
+                <div className="size-1 rounded-full bg-gray-400/60 group-hover:bg-gray-500 dark:bg-gray-400 dark:group-hover:bg-gray-200"></div>
+              </div>
+            </Link>
+            <Link
+              href="/contact"
+              className="group relative min-w-50 rounded-xl bg-gray-200/50 px-4 py-3 text-sm ring-1 ring-gray-200 hover:ring-gray-300 dark:bg-gray-600 dark:ring-gray-500 dark:hover:ring-gray-400"
+            >
+              <div className="text-sm font-medium text-gray-500 dark:text-gray-400">Contact</div>
+              <div className="text-sm font-medium text-gray-800 dark:text-white">Get in touch</div>
+              <div className="absolute top-4 right-4 flex gap-0.5">
+                <div className="size-1 rounded-full bg-gray-400/60 group-hover:bg-gray-500 dark:bg-gray-400 dark:group-hover:bg-gray-200"></div>
+                <div className="size-1 rounded-full bg-gray-400/60 group-hover:bg-gray-500 dark:bg-gray-400 dark:group-hover:bg-gray-200"></div>
+              </div>
+            </Link>
           </div>
         </div>
 
