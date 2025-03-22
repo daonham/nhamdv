@@ -6,4 +6,23 @@
 
 @theme {
   --font-sans: var(--font-inter);
+  --tw-full-bleed-color: #e0e0e0;
+  --tw-full-bleed-border-bottom-width: 1px;
+}
+
+.bleed-ln-gray-200 {
+  --tw-full-bleed-color: #e0e0e0;
+}
+
+.bleed-border-b {
+  border-image: linear-gradient(var(--tw-full-bleed-color) 0 0) 1 / /0 9999vw 0 9999vw;
+  border-bottom: var(--tw-full-bleed-border-bottom-width) solid;
+}
+
+.bleed-bg-l {
+  border-image: linear-gradient(var(--tw-full-bleed-color) 0 0) fill 0 / /0 0 0 9999vw;
+}
+
+.bleed-bg-r {
+  border-image: linear-gradient(var(--tw-full-bleed-color) 0 0) fill 0 / /0 9999vw 0 0;
 }

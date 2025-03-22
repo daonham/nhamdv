@@ -9,7 +9,7 @@ import ToggleTheme from '@/components/toggle-theme';
 
 export default function Home() {
   return (
-    <main className="relative flex min-h-[100dvh] w-full flex-col items-center overflow-hidden">
+    <>
       <header className="relative mx-auto w-full max-w-screen-md px-4">
         <div className="flex h-full w-full flex-col justify-center gap-8">
           <div className="flex w-full gap-4 pt-16">
@@ -95,7 +95,25 @@ export default function Home() {
       </header>
       <section id="about" className="mx-auto mt-16 w-full max-w-screen-md px-4">
         <div className="flex flex-col gap-4">
-          <h2 className="text-xl font-medium">About me</h2>
+          <div className="flex items-center justify-center gap-4">
+            <div
+              className="static left-0 hidden h-px w-full flex-1 xl:block"
+              style={{
+                background:
+                  'linear-gradient(90deg, rgba(38, 38, 38, 0) 0%, rgb(209 209 209) 32%, rgb(202 202 202) 68%, rgba(38, 38, 38, 0) 100%)'
+              }}
+            ></div>
+            <div className="rounded-full border border-gray-200 px-3 py-2 dark:border-gray-600">
+              <h2 className="text-sm font-medium">About me</h2>
+            </div>
+            <div
+              className="static left-0 hidden h-px w-full flex-1 xl:block"
+              style={{
+                background:
+                  'linear-gradient(90deg, rgba(38, 38, 38, 0) 0%, rgb(209 209 209) 32%, rgb(202 202 202) 68%, rgba(38, 38, 38, 0) 100%)'
+              }}
+            ></div>
+          </div>
           <div className="flex flex-col gap-2">
             <article className="prose max-w-none dark:text-gray-300">
               <p>
@@ -129,7 +147,25 @@ export default function Home() {
       </section>
       <section id="skills" className="mx-auto mt-16 w-full max-w-screen-md px-4">
         <div className="flex flex-col gap-4">
-          <h2 className="text-xl font-medium">Skills</h2>
+          <div className="flex items-center justify-center gap-4">
+            <div
+              className="static left-0 hidden h-px w-full flex-1 xl:block"
+              style={{
+                background:
+                  'linear-gradient(90deg, rgba(38, 38, 38, 0) 0%, rgb(209 209 209) 32%, rgb(202 202 202) 68%, rgba(38, 38, 38, 0) 100%)'
+              }}
+            ></div>
+            <div className="rounded-full border border-gray-200 px-3 py-2 dark:border-gray-600">
+              <h2 className="text-sm font-medium">Skills</h2>
+            </div>
+            <div
+              className="static left-0 hidden h-px w-full flex-1 xl:block"
+              style={{
+                background:
+                  'linear-gradient(90deg, rgba(38, 38, 38, 0) 0%, rgb(209 209 209) 32%, rgb(202 202 202) 68%, rgba(38, 38, 38, 0) 100%)'
+              }}
+            ></div>
+          </div>
           <div className="flex flex-col gap-2">
             <ul className="flex flex-col gap-2 text-base text-gray-700 dark:text-gray-300">
               <li className="flex gap-2.5">
@@ -197,13 +233,49 @@ export default function Home() {
       </section>
       <section id="experience" className="mx-auto mt-16 w-full max-w-screen-md px-4">
         <div className="flex flex-col gap-4">
-          <h2 className="text-xl font-medium">Experience</h2>
+          <div className="flex items-center justify-center gap-4">
+            <div
+              className="static left-0 hidden h-px w-full flex-1 xl:block"
+              style={{
+                background:
+                  'linear-gradient(90deg, rgba(38, 38, 38, 0) 0%, rgb(209 209 209) 32%, rgb(202 202 202) 68%, rgba(38, 38, 38, 0) 100%)'
+              }}
+            ></div>
+            <div className="rounded-full border border-gray-200 px-3 py-2 dark:border-gray-600">
+              <h2 className="text-sm font-medium">Experience</h2>
+            </div>
+            <div
+              className="static left-0 hidden h-px w-full flex-1 xl:block"
+              style={{
+                background:
+                  'linear-gradient(90deg, rgba(38, 38, 38, 0) 0%, rgb(209 209 209) 32%, rgb(202 202 202) 68%, rgba(38, 38, 38, 0) 100%)'
+              }}
+            ></div>
+          </div>
           <Experience />
         </div>
       </section>
       <section id="education" className="mx-auto mt-16 w-full max-w-screen-md px-4">
         <div className="flex flex-col gap-4">
-          <h2 className="text-xl font-medium">Education</h2>
+          <div className="flex items-center justify-center gap-4">
+            <div
+              className="static left-0 hidden h-px w-full flex-1 xl:block"
+              style={{
+                background:
+                  'linear-gradient(90deg, rgba(38, 38, 38, 0) 0%, rgb(209 209 209) 32%, rgb(202 202 202) 68%, rgba(38, 38, 38, 0) 100%)'
+              }}
+            ></div>
+            <div className="rounded-full border border-gray-200 px-3 py-2 dark:border-gray-600">
+              <h2 className="text-sm font-medium">Education</h2>
+            </div>
+            <div
+              className="static left-0 hidden h-px w-full flex-1 xl:block"
+              style={{
+                background:
+                  'linear-gradient(90deg, rgba(38, 38, 38, 0) 0%, rgb(209 209 209) 32%, rgb(202 202 202) 68%, rgba(38, 38, 38, 0) 100%)'
+              }}
+            ></div>
+          </div>
           <div className="flex flex-col gap-2">
             <div className="flex flex-col gap-2">
               <div className="flex justify-between gap-2">
@@ -223,19 +295,55 @@ export default function Home() {
       </section>
       <section id="projects" className="mx-auto mt-16 w-full max-w-screen-md px-4">
         <div className="flex flex-col gap-4">
-          <h2 className="text-xl font-medium">Projects</h2>
+          <div className="flex items-center justify-center gap-4">
+            <div
+              className="static left-0 hidden h-px w-full flex-1 xl:block"
+              style={{
+                background:
+                  'linear-gradient(90deg, rgba(38, 38, 38, 0) 0%, rgb(209 209 209) 32%, rgb(202 202 202) 68%, rgba(38, 38, 38, 0) 100%)'
+              }}
+            ></div>
+            <div className="rounded-full border border-gray-200 px-3 py-2 dark:border-gray-600">
+              <h2 className="text-sm font-medium">Projects</h2>
+            </div>
+            <div
+              className="static left-0 hidden h-px w-full flex-1 xl:block"
+              style={{
+                background:
+                  'linear-gradient(90deg, rgba(38, 38, 38, 0) 0%, rgb(209 209 209) 32%, rgb(202 202 202) 68%, rgba(38, 38, 38, 0) 100%)'
+              }}
+            ></div>
+          </div>
           <Projects />
         </div>
       </section>
       <section id="contact" className="mx-auto mt-16 w-full max-w-screen-md px-4">
         <div className="flex flex-col gap-4">
-          <h2 className="text-xl font-medium">Contact</h2>
+          <div className="flex items-center justify-center gap-4">
+            <div
+              className="static left-0 hidden h-px w-full flex-1 xl:block"
+              style={{
+                background:
+                  'linear-gradient(90deg, rgba(38, 38, 38, 0) 0%, rgb(209 209 209) 32%, rgb(202 202 202) 68%, rgba(38, 38, 38, 0) 100%)'
+              }}
+            ></div>
+            <div className="rounded-full border border-gray-200 px-3 py-2 dark:border-gray-600">
+              <h2 className="text-sm font-medium">Contact</h2>
+            </div>
+            <div
+              className="static left-0 hidden h-px w-full flex-1 xl:block"
+              style={{
+                background:
+                  'linear-gradient(90deg, rgba(38, 38, 38, 0) 0%, rgb(209 209 209) 32%, rgb(202 202 202) 68%, rgba(38, 38, 38, 0) 100%)'
+              }}
+            ></div>
+          </div>
           <Contact />
         </div>
       </section>
       <footer className="mx-auto mt-16 w-full max-w-screen-md px-4">
         <Footer />
       </footer>
-    </main>
+    </>
   );
 }

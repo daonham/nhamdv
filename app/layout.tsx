@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import Provider from './provider';
+import Ruler from '@/components/ruler';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -23,7 +24,10 @@ export default function RootLayout({
     >
       <body>
         <Provider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-          {children}
+          <main className="relative isolate flex min-h-[100dvh] w-full flex-col items-center overflow-hidden">
+            <Ruler />
+            {children}
+          </main>
         </Provider>
       </body>
     </html>
