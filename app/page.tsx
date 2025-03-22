@@ -5,7 +5,6 @@ import Contact from '@/components/contact';
 import Experience from '@/components/experience';
 import Footer from '@/components/footer';
 import Projects from '@/components/projects';
-import ScrollSection from '@/components/scroll-section';
 import ToggleTheme from '@/components/toggle-theme';
 
 export default function Home() {
