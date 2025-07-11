@@ -53,7 +53,8 @@ export default function Contact() {
           {time.toLocaleTimeString('en-US', {
             timeZone: 'Asia/Ho_Chi_Minh',
             hour: '2-digit',
-            minute: '2-digit'
+            minute: '2-digit',
+            second: '2-digit'
           })}{' '}
           <span className="text-gray-500 dark:text-gray-400">(UTC +07:00)</span>
         </div>
