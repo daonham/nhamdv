@@ -53,8 +53,7 @@ export default function Contact() {
           {time.toLocaleTimeString('en-US', {
             timeZone: 'Asia/Ho_Chi_Minh',
             hour: '2-digit',
-            minute: '2-digit',
-            second: '2-digit'
+            minute: '2-digit'
           })}{' '}
           <span className="text-gray-500 dark:text-gray-400">(UTC +07:00)</span>
         </div>
@@ -87,15 +86,6 @@ export default function Contact() {
             className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300"
           >
             daovan.nham
-          </a>
-        </div>
-        <div className="flex items-center gap-2">
-          <span className="font-medium text-gray-700 dark:text-gray-200">Skype:</span>
-          <a
-            href="skype:live:daonham95?chat"
-            className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300"
-          >
-            daonham95
           </a>
         </div>
       </div>

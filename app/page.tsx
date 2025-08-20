@@ -6,6 +6,7 @@ import Experience from '@/components/experience';
 import Footer from '@/components/footer';
 import Projects from '@/components/projects';
 import ToggleTheme from '@/components/toggle-theme';
+import { Suspense } from 'react';
 
 export default function Home() {
   return (
@@ -230,7 +231,9 @@ export default function Home() {
       <section id="contact" className="mx-auto mt-16 w-full max-w-screen-md px-4">
         <div className="flex flex-col gap-4">
           <h2 className="text-xl font-medium">Contact</h2>
-          <Contact />
+          <Suspense fallback={<div>Loading...</div>}>
+            <Contact />
+          </Suspense>
         </div>
       </section>
       <footer className="mx-auto mt-16 w-full max-w-screen-md px-4">
