@@ -9,7 +9,7 @@ export default function Experience() {
           <span className="text-gray-500 dark:text-gray-300">2020 - Present</span>
         </div>
         <p className="text-sm text-gray-500 dark:text-gray-400">Full Stack Developer</p>
-        <ul className="space-y-2 text-gray-700 dark:text-gray-300">
+        <ul className="space-y-2 text-sm text-gray-700 dark:text-gray-300">
           <li className="flex gap-2.5">
             <span className="mt-2 size-1.25 rounded-full bg-gray-600 dark:bg-gray-300" />
             <span className="flex-1">
@@ -81,7 +81,7 @@ export default function Experience() {
           <span className="text-gray-500 dark:text-gray-300">2018 - 2020</span>
         </div>
         <p className="text-sm text-gray-500 dark:text-gray-400">Full Stack Developer</p>
-        <ul className="space-y-2 text-gray-700 dark:text-gray-300">
+        <ul className="space-y-2 text-sm text-gray-700 dark:text-gray-300">
           <li className="flex gap-2.5">
             <span className="mt-2 size-1.25 rounded-full bg-gray-600 dark:bg-gray-300" />
             <span className="flex-1">
@@ -146,7 +146,7 @@ export default function Experience() {
           <span className="text-gray-500 dark:text-gray-300">2017 - 2018</span>
         </div>
         <p className="text-sm text-gray-500 dark:text-gray-400">Full Stack Developer</p>
-        <ul className="space-y-2 text-gray-700 dark:text-gray-300">
+        <ul className="space-y-2 text-sm text-gray-700 dark:text-gray-300">
           <li className="flex gap-2.5">
             <span className="mt-2 size-1.25 rounded-full bg-gray-600 dark:bg-gray-300" />
             <span className="flex-1">

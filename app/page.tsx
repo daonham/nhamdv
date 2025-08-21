@@ -96,9 +96,9 @@ export default function Home() {
       </header>
       <section id="about" className="mx-auto mt-16 w-full max-w-screen-md px-4">
         <div className="flex flex-col gap-4">
-          <h2 className="text-xl font-medium">About me</h2>
+          <h2 className="text-lg font-medium">About me</h2>
           <div className="flex flex-col gap-2">
-            <article className="prose max-w-none dark:text-gray-300">
+            <article className="prose prose-sm max-w-none dark:text-gray-300">
               <p>
                 I am a Developer with 8 years of experience in web and mobile development,
                 specializing in both frontend and backend technologies. Throughout my career, I have
@@ -130,9 +130,9 @@ export default function Home() {
       </section>
       <section id="skills" className="mx-auto mt-16 w-full max-w-screen-md px-4">
         <div className="flex flex-col gap-4">
-          <h2 className="text-xl font-medium">Skills</h2>
+          <h2 className="text-lg font-medium">Skills</h2>
           <div className="flex flex-col gap-2">
-            <ul className="flex flex-col gap-2 text-base text-gray-700 dark:text-gray-300">
+            <ul className="flex flex-col gap-2 text-sm text-gray-700 dark:text-gray-300">
               <li className="flex gap-2.5">
                 <span className="mt-2 size-1.25 rounded-full bg-gray-600" />
                 <span className="flex-1">
@@ -198,13 +198,13 @@ export default function Home() {
       </section>
       <section id="experience" className="mx-auto mt-16 w-full max-w-screen-md px-4">
         <div className="flex flex-col gap-4">
-          <h2 className="text-xl font-medium">Experience</h2>
+          <h2 className="text-lg font-medium">Experience</h2>
           <Experience />
         </div>
       </section>
       <section id="education" className="mx-auto mt-16 w-full max-w-screen-md px-4">
         <div className="flex flex-col gap-4">
-          <h2 className="text-xl font-medium">Education</h2>
+          <h2 className="text-lg font-medium">Education</h2>
           <div className="flex flex-col gap-2">
             <div className="flex flex-col gap-2">
               <div className="flex justify-between gap-2">
@@ -212,10 +212,10 @@ export default function Home() {
                   <MapPin className="size-4" />
                   Hanoi, Vietnam
                 </p>
-                <p className="text-sm text-gray-500">2013 - 2017</p>
+                <p className="text-sm text-gray-500 dark:text-gray-400">2013 - 2017</p>
               </div>
               <h3 className="text-md font-medium">National Economics University</h3>
-              <p className="text-gray-500 dark:text-gray-300">
+              <p className="text-sm text-gray-500 dark:text-gray-300">
                 Computer Science and Information Technology
               </p>
             </div>
@@ -224,13 +224,13 @@ export default function Home() {
       </section>
       <section id="projects" className="mx-auto mt-16 w-full max-w-screen-md px-4">
         <div className="flex flex-col gap-4">
-          <h2 className="text-xl font-medium">Projects</h2>
+          <h2 className="text-lg font-medium">Projects</h2>
           <Projects />
         </div>
       </section>
       <section id="contact" className="mx-auto mt-16 w-full max-w-screen-md px-4">
         <div className="flex flex-col gap-4">
-          <h2 className="text-xl font-medium">Contact</h2>
+          <h2 className="text-lg font-medium">Contact</h2>
           <Suspense fallback={<div>Loading...</div>}>
             <Contact />
           </Suspense>

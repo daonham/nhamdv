@@ -5,7 +5,5 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --font-sans: var(--font-sf-pro-text);
-  --font-display: var(--font-sf-pro-display);
-  --font-icons: var(--font-sf-pro-icons);
+  --font-sans: var(--font-geist-mono);
 }

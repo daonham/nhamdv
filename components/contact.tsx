@@ -98,11 +98,11 @@ export default function Contact() {
             type="email"
             id="email"
             {...register('email')}
-            className="w-full rounded-md border-none bg-white p-2 text-gray-800 ring-1 ring-gray-300 focus:ring-[1.5px] focus:ring-blue-500 focus:outline-none dark:bg-gray-600 dark:text-gray-200 dark:ring-gray-500"
+            className="w-full rounded-md border-none bg-white p-2 text-sm text-gray-800 ring-1 ring-gray-300 focus:ring-[1.5px] focus:ring-gray-600 focus:outline-none dark:bg-gray-600 dark:text-gray-200 dark:ring-gray-500 dark:focus:ring-gray-200"
           />
           {errors.email && (
             <span className="flex items-center gap-1 text-sm text-red-500">
-              <CircleAlert className="h-4 w-4" />
+              <CircleAlert className="size-4" />
               {errors.email.message}
             </span>
           )}
@@ -115,11 +115,11 @@ export default function Contact() {
             rows={2}
             id="message"
             {...register('message')}
-            className="w-full rounded-md border-none bg-white p-2 text-gray-800 ring-1 ring-gray-300 focus:ring-[1.5px] focus:ring-blue-500 focus:outline-none dark:bg-gray-600 dark:text-gray-200 dark:ring-gray-500"
+            className="w-full rounded-md border-none bg-white p-2 text-sm text-gray-800 ring-1 ring-gray-300 focus:ring-[1.5px] focus:ring-gray-600 focus:outline-none dark:bg-gray-600 dark:text-gray-200 dark:ring-gray-500 dark:focus:ring-gray-200"
           />
           {errors.message && (
             <span className="flex items-center gap-1 text-sm text-red-500">
-              <CircleAlert className="h-4 w-4" />
+              <CircleAlert className="size-4" />
               {errors.message.message}
             </span>
           )}
